@@ -1,0 +1,5 @@
+spawn-at-startup "waybar"
+spawn-at-startup "swaybg" "-i" "/home/mohammad/Downloads/wallpapers/.jpg"
+spawn-at-startup "sh" "-c" "wallust run -p kmeans /home/mohammad/Downloads/wallpapers/ho.jpg && touch ~/.config/alacritty/alacritty.toml"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"

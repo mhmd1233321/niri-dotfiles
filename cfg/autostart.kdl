@@ -1,0 +1,12 @@
+// 1. تشغيل daemon الخلفيات
+spawn-at-startup "awww-daemon"
+
+// 2. تطبيق خلفية nord وتوليد الألوان وتحديث Waybar فوراً
+spawn-at-startup "sh" "-c" "awww img /home/mohammad/walls/gruvbox/11.webp && wallust run -s /home/mohammad/walls/gruvbox/11.webp"
+
+// 3. تشغيل Waybar
+spawn-at-startup "waybar"
+
+// 4. ضبط البيئة
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"

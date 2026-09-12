@@ -1,0 +1,4 @@
+/- output "DP-1" {
+    mode "1920x1080@60.00hz" // Set resolution and refresh rate
+    scale 1 // No scaling (use 2 for HiDPI)
+}

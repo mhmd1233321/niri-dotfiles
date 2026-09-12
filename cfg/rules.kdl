@@ -1,0 +1,11 @@
+window-rule {
+    match app-id=r#"(?i)^(alacritty|kitty|io\.bassi\.amberol)$"#
+
+    geometry-corner-radius 20
+    clip-to-geometry true
+
+
+    background-effect {
+        blur true
+    }
+}

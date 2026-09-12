@@ -1,0 +1,13 @@
+layout {
+    gaps 18
+
+    border {
+        off
+    }
+
+    focus-ring {
+        width 0
+        active-color "#000000"     // لون النافذة الشغالة (Active)
+        inactive-color "#505050"   // لون باقي النوافذ (Inactive)
+    }
+}
